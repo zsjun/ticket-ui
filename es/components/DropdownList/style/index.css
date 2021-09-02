@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.dropdown-list {
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal; }
+  .dropdown-list.open .dropdown-trigger-item {
+    border-bottom: none; }
+  .dropdown-list .dropdown-overlay {
+    width: 100%; }
+  .dropdown-list.disabled {
+    opacity: 0.7;
+    cursor: not-allowed; }
+
+.dropdown-list-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.dropdown-list-item {
+  position: relative;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e0e2e1;
+  cursor: pointer;
+  text-align: left; }
+  .dropdown-list-item:last-child {
+    border-bottom: none; }
+  .dropdown-list-item:hover {
+    background-color: #2b75c8;
+    color: #fff; }
+  .dropdown-list-item.dropdown-list-item-active {
+    color: #2d84e5; }
+    .dropdown-list-item.dropdown-list-item-active:hover {
+      color: #fff; }
+  .dropdown-list-item.disabled {
+    cursor: not-allowed;
+    opacity: 0.7; }

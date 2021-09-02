@@ -1,0 +1,143 @@
+@import "../../Input/style/index.scss";
+
+.checkbox-select-wrap {
+  display: inline-block;
+}
+
+.checkbox-select-result {
+  @extend .input;
+  min-width: 230px;
+  background-color: #fff;
+  display: flex;
+  padding-right: 30px;
+
+  &::after {
+    right: 10px;
+    border: 6px solid transparent;
+    border-top-color: #333;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 13px;
+    width: 0;
+  }
+  .close-icon {
+    fill: #a53c3c;
+    margin-top: 8px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+  }
+}
+.link {
+  border-radius: 2px;
+  .close-icon {
+    margin-left: 5px;
+    fill: #A4A4AE;
+    width: 14px;
+    height: 14px;
+    &:hover {
+      fill: #6D6D75;
+    }
+  }
+  .dropdown {
+    flex: 1;
+  }
+  .checkbox-select-result {
+    background-color: transparent;
+    border: none;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 2px;
+    padding-right: 0px;
+    padding-left: 5px;
+    &:after {
+      display: none;
+    }
+  }
+  .arrow-icon {
+    width: 10px;
+    margin-top: 6px;
+    flex-shrink: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .checkbox-select-result-value {
+    color: #3a7eea;
+    flex: unset;
+  }
+  .dropdown {
+    &:hover {
+      background: #F1F1F7;
+    }
+  }
+}
+.can-delete {
+  .checkbox-select-result::after {
+    right: 10px;
+  }
+}
+.checkbox-select-result-label {
+  margin-right: 10px;
+  color: #888;
+}
+.checkbox-select-result-value {
+  max-width: 140px;
+  margin: 0;
+  padding: 0;
+  color: #20384d;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.checkbox-select-content {
+  min-width: 230px;
+  padding: 10px;
+}
+
+.checkbox-select-content-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: $primaryBlueColor;
+  margin-bottom: 14px;
+  margin-top: -6px;
+}
+.checkbox-select-search-input {
+  margin-bottom: 5px;
+  padding-left: 22px;
+}
+.checkbox-select-content-checkbox {
+  max-height: 210px;
+  overflow-y: auto;
+  .checkbox-label {
+    display: block;
+    line-height: 20px;
+    & + .checkbox-label {
+      margin-top: 5px;
+    }
+  }
+}
+.checkbox-select-button-wrap {
+  text-align: right;
+  margin-top: 10px;
+
+  .cancel {
+    float: left;
+    background-color: #e5efff;
+    color: #345ea1;
+    height: 21px;
+    line-height: 21px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .confirm {
+    height: 21px;
+    line-height: 21px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}

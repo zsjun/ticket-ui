@@ -1,0 +1,216 @@
+@import "../../../styles/assets/constant.scss";
+
+/**
+ * @atom Tab
+ * @section Tab
+ * @modifiers
+ *  .tab 分页标签
+ *  .tab.active 标签激活态
+ *  .tab-activated 标签激活态，和.tab.active一样
+ *  .btn-tab 按钮型分页标签
+ *  .btn-tab.active 按钮型标签激活态
+ *  .btn-tab-activated 按钮型标签激活态
+ * @markup
+ *  <span class="tab">tab1</span>
+ *  <span class="tab active">tab2</span>
+ *  <span class="btn-tab">tab1</span>
+ *  <span class="btn-tab active">tab2</span>
+ */
+
+.tab {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-right: 10px;
+  color: #999;
+  fill: #999;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    color: $basic-imp-color;
+    fill: $basic-imp-color;
+  }
+
+  &.active {
+    color: $basic-imp-color;
+    fill: $basic-imp-color;
+    border-bottom: 2px solid $basic-imp-color;
+  }
+}
+
+.tab-wrap {
+  width: 100%;
+}
+.tab-header {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  color: #333;
+  fill: #333;
+  align-items: flex-end;
+}
+.tab-header-item {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+
+  &.mgr30 {
+    margin-right: 30px;
+  }
+
+  &:last-child {
+    border-right: 1px solid #e0e0e0;
+  }
+
+  &:hover {
+    color: $basic-imp-color;
+    fill: $basic-imp-color;
+  }
+
+  &.active {
+    position: relative;
+    color: $basic-imp-color;
+    fill: $basic-imp-color;
+    background: $basic-white-color;
+    border-top: none;
+    font-weight: bold;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -3px;
+      background-color: #333;
+      width: 100%;
+      height: 3px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      z-index: 3;
+    }
+  }
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    &:hover {
+      color: #999;
+      fill: #999;
+    }
+  }
+}
+.tab-link {
+  .tab-header {
+    border-bottom: 1px solid #dbdde2;
+    padding: 15px 20px 0 20px;
+  }
+  .tab-header-item {
+    border: none;
+    &.active {
+      &:before {
+        display: none;
+      }
+      &:after {
+        background: #333;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        width: unset;
+        height: 2px;
+      }
+    }
+  }
+  &.blue {
+    .tab-header-item {
+      color: #666666;
+      background: transparent;
+      &.active {
+        color: #3a7eea;
+      }
+      &:after {
+        background: #3a7eea;
+      }
+    }
+  }
+}
+
+.tab-card {
+  .tab-header-inner {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  & > .tab-header > .tab-header-item {
+    background-color: #f7f7f7;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    height: 36px;
+    margin-right: 0;
+    line-height: 14px;
+    padding: 10px 20px;
+    border-left: 1px solid #e0e2ef;
+    border-top: 1px solid #e0e2ef;
+    border-bottom: 1px solid #e0e2ef;
+
+    &:last-child {
+      border-right: 1px solid #e4e6e9;
+      margin-top: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      position: relative;
+      background-color: #fff;
+      font-weight: 700;
+      color: #333333;
+      border-bottom: none;
+      // border-top: 3px solid $basic-imp-color;
+      margin-bottom: 0;
+      height: 36px;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $basic-imp-color;
+        top: -3px;
+        left: 0;
+      }
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+      &:hover {
+        color: #999;
+        fill: #999;
+      }
+    }
+  }
+}
+.tab-panel {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

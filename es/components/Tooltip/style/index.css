@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.rcc-tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  visibility: visible;
+  line-height: 1.5;
+  font-size: 12px;
+  padding: 0px;
+  opacity: 0.7; }
+  .rcc-tooltip-hidden {
+    display: none; }
+  .rcc-tooltip-placement-top {
+    margin-top: -10px; }
+  .rcc-tooltip-placement-right {
+    margin-left: 10px; }
+  .rcc-tooltip-placement-bottom {
+    margin-top: 10px; }
+  .rcc-tooltip-placement-left {
+    margin-left: -10px; }
+  .rcc-tooltip-placement-top .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-topLeft .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-topRight .rcc-tooltip-arrow {
+    bottom: -6px;
+    margin-left: -6px;
+    border-width: 6px 6px 0;
+    border-top-color: #000; }
+  .rcc-tooltip-placement-top .rcc-tooltip-arrow {
+    left: 50%; }
+  .rcc-tooltip-placement-topLeft .rcc-tooltip-arrow {
+    left: 15%; }
+  .rcc-tooltip-placement-topRight .rcc-tooltip-arrow {
+    right: 15%; }
+  .rcc-tooltip-placement-right .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-rightTop .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-rightBottom .rcc-tooltip-arrow {
+    left: -6px;
+    margin-top: -6px;
+    border-width: 6px 6px 6px 0;
+    border-right-color: #000; }
+  .rcc-tooltip-placement-right .rcc-tooltip-arrow-inner,
+  .rcc-tooltip-placement-rightTop .rcc-tooltip-arrow-inner,
+  .rcc-tooltip-placement-rightBottom .rcc-tooltip-arrow-inner {
+    left: 0;
+    margin-top: -6px;
+    border-width: 6px 6px 6px 0;
+    border-right-color: #000; }
+  .rcc-tooltip-placement-right .rcc-tooltip-arrow {
+    top: 50%; }
+  .rcc-tooltip-placement-rightTop .rcc-tooltip-arrow {
+    top: 15%;
+    margin-top: 0; }
+  .rcc-tooltip-placement-rightBottom .rcc-tooltip-arrow {
+    bottom: 15%; }
+  .rcc-tooltip-placement-left .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-leftTop .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-leftBottom .rcc-tooltip-arrow {
+    right: -6px;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-left-color: #000; }
+  .rcc-tooltip-placement-left .rcc-tooltip-arrow-inner,
+  .rcc-tooltip-placement-leftTop .rcc-tooltip-arrow-inner,
+  .rcc-tooltip-placement-leftBottom .rcc-tooltip-arrow-inner {
+    right: 0;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-left-color: #000; }
+  .rcc-tooltip-placement-left .rcc-tooltip-arrow {
+    top: 50%; }
+  .rcc-tooltip-placement-leftTop .rcc-tooltip-arrow {
+    top: 15%;
+    margin-top: 0; }
+  .rcc-tooltip-placement-leftBottom .rcc-tooltip-arrow {
+    bottom: 15%; }
+  .rcc-tooltip-placement-bottom .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-bottomLeft .rcc-tooltip-arrow,
+  .rcc-tooltip-placement-bottomRight .rcc-tooltip-arrow {
+    top: -6px;
+    margin-left: -6px;
+    border-width: 0 6px 6px;
+    border-bottom-color: #000; }
+  .rcc-tooltip-placement-bottom .rcc-tooltip-arrow-inner,
+  .rcc-tooltip-placement-bottomLeft .rcc-tooltip-arrow-inner,
+  .rcc-tooltip-placement-bottomRight .rcc-tooltip-arrow-inner {
+    top: 0;
+    margin-left: -6px;
+    border-width: 0 6px 6px;
+    border-bottom-color: #000; }
+  .rcc-tooltip-placement-bottom .rcc-tooltip-arrow {
+    left: 50%; }
+  .rcc-tooltip-placement-bottomLeft .rcc-tooltip-arrow {
+    left: 15%; }
+  .rcc-tooltip-placement-bottomRight .rcc-tooltip-arrow {
+    right: 15%; }
+
+.rcc-tooltip-inner {
+  padding: 10px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 2px;
+  min-height: 34px;
+  border: 0 solid transparent;
+  box-shadow: none; }
+
+.rcc-tooltip-arrow,
+.rcc-tooltip-arrow-inner {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }

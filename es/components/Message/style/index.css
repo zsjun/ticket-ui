@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.move-up-enter,
+.move-up-appear {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-play-state: paused; }
+
+.move-up-leave {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-play-state: paused; }
+
+.move-up-enter.move-up-enter-active,
+.move-up-appear.move-up-appear-active {
+  animation-name: "antZoomUpIn";
+  animation-play-state: running; }
+
+.move-up-leave.move-up-leave-active {
+  animation-name: "antZoomUpOut";
+  animation-play-state: running;
+  pointer-events: none; }
+
+.move-up-enter,
+.move-up-appear {
+  opacity: 0;
+  animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1); }
+
+.move-up-leave {
+  animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86); }
+
+@keyframes antMoveUpIn {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+    opacity: 0; }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+    opacity: 1; } }
+
+@keyframes antMoveUpOut {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+    opacity: 1; }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+    opacity: 0; } }
+
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.notice-group {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  z-index: 999;
+  text-align: center; }
+
+.notice {
+  display: block;
+  margin-bottom: 20px;
+  pointer-events: none;
+  padding: 8px 16px;
+  line-height: 1;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 2px;
+  color: #666;
+  font-size: 12px; }
+  .notice.success .notice-icon {
+    fill: #80d225; }
+  .notice.error .notice-icon {
+    fill: #ee4630; }
+  .notice.warning .notice-icon {
+    fill: #ffbf00; }
+
+.notice-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: top;
+  margin-right: 8px; }

@@ -1,0 +1,72 @@
+@import "./constant.scss";
+
+.topTriangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 5px 5px 5px;
+  border-color: transparent transparent #999 transparent;
+  &.active {
+    border-color: transparent transparent $primaryBlueColor transparent;
+  }
+
+  &.table-active {
+    border-color: transparent transparent #333333 transparent;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.leftTriangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 2.5px;
+  border-color: transparent #999 transparent transparent;
+  &.active {
+    border-color: transparent $primaryBlueColor transparent transparent;
+  }
+  &.table-active {
+    border-color: transparent #333 transparent transparent;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.rightTriangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 2.5px 5px 5px;
+  border-color: transparent transparent transparent #999;
+  &.active {
+    border-color: transparent transparent transparent $primaryBlueColor;
+  }
+  &.table-active {
+    border-color: transparent transparent transparent #333;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.bottomTriangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 2.5px 5px;
+  border-color: #999 transparent transparent transparent;
+  &.active {
+    border-color: $primaryBlueColor transparent transparent transparent;
+  }
+  &.table-active {
+    border-color: #333 transparent transparent transparent;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

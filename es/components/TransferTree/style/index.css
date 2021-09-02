@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.transfer {
+  width: 100%;
+  display: flex;
+  color: #333333; }
+
+.transfer-list-wrap {
+  flex: 1;
+  border: 1px solid #e0e2e1;
+  overflow: hidden; }
+
+.transfer-controll-center {
+  flex: 0 0 80px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .transfer-controll-center .btn {
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal; }
+    .transfer-controll-center .btn:first-child {
+      margin-bottom: 10px; }
+    .transfer-controll-center .btn:last-child {
+      border: 1px solid #e0e2e1;
+      background-color: #fff; }
+  .transfer-controll-center .icon-arrow {
+    transform: rotate(45deg);
+    border-color: #fff;
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    margin-top: 3px;
+    margin-left: 0; }
+    .transfer-controll-center .icon-arrow.left {
+      transform: rotate(-135deg);
+      margin-left: 4px;
+      border-color: #666; }
+
+.transfer-list-title {
+  height: 32px;
+  padding: 10px;
+  line-height: 1;
+  border-bottom: 1px solid #e0e2e1;
+  font-weight: bold;
+  font-size: 12px; }
+  .transfer-list-title .checkbox {
+    margin-right: 10px; }
+  .transfer-list-title .checkbox-label {
+    display: inline-block;
+    vertical-align: top; }
+
+.transfer-search-wrap {
+  padding: 10px;
+  padding-bottom: 0; }
+
+.transfer-items-wrap {
+  margin-bottom: 0;
+  padding: 10px; }
+  .transfer-items-wrap .box-content {
+    overflow-y: scroll;
+    height: 120px; }
+    .transfer-items-wrap .box-content::-webkit-scrollbar {
+      background-color: #f8f8fa;
+      width: 8px;
+      border-right: 1px solid #e0e2e1;
+      border-left: 1px solid #e0e2e1; }
+    .transfer-items-wrap .box-content::-webkit-scrollbar-thumb {
+      background-color: #e0e2e1; }
+  .transfer-items-wrap .checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1; }

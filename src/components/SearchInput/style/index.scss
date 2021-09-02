@@ -1,0 +1,21 @@
+@import "../../Form/style/common.scss";
+
+.search-input {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+
+  input {
+	  height: 30px;
+	  box-sizing: border-box;
+  }
+
+  .del-icon {
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    right: 72px;
+  }
+}

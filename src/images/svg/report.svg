@@ -1,0 +1,9 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.9 15.5">
+  <defs></defs>
+  <title>报告</title>
+  <polygon points="11 14 1.5 14 1.5 1.5 11 1.5 11 3.25 12.5 1.75 12.5 0 0 0 0 15.5 12.5 15.5 12.5 8.45 11 9.95 11 14" />
+  <polygon points="7.24 12.57 4.94 10.27 4.75 10.45 4.75 12.75 7.05 12.75 7.24 12.57" />
+  <rect x="7.24" y="7.01" width="10.27" height="3.25" transform="translate(-4.73 10.04) rotate(-45.05)" />
+  <rect x="2.75" y="3.08" width="7.08" height="1.5" />
+  <rect x="2.75" y="6.42" width="4" height="1.5" />
+</svg>

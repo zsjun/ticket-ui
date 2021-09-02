@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/**
+ * @atom Button
+ * @section Button
+ * @modifiers
+ *  .btn-primary  主按钮
+ *  .btn-secondary 次按钮
+ *  .btn-cancel 取消按钮
+ *  .btn-link 按钮链接
+ * @markup
+ *  <button class="btn">button</button>
+ *  <button class="btn btn-primary">button primary</button>
+ *  <button class="btn btn-secondary">button secondary</button>
+ *  <button class="btn btn-cancel">button cancel</button>
+ *  <button class="btn btn-link">button link</button>
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.btn {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 2px;
+  color: #666;
+  background-color: #e4e4e4;
+  border: none; }
+  .btn:hover {
+    cursor: pointer; }
+  .btn:focus {
+    outline: 0; }
+  .btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed; }
+
+.btn-primary {
+  background-color: #2e3e4b;
+  color: #fff; }
+
+.btn-secondary {
+  background-color: #2d84e5;
+  color: #fff; }
+  .btn-secondary:hover {
+    background-color: #2b75c8; }
+
+.btn-cancel {
+  background-color: #e0e2e1;
+  color: #999; }
+  .btn-cancel:hover {
+    background-color: #e0e2e1; }
+
+.btn-link {
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  font-weight: normal; }
+  .btn-link:hover {
+    cursor: pointer;
+    text-decoration: underline; }

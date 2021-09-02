@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+td {
+  padding: 0; }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #f8f8fa;
+  font-size: 12px; }
+  .table .react-resizable-handle {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    bottom: 0;
+    right: -5px;
+    cursor: col-resize; }
+  .table.border {
+    border: 1px solid #e0e2e1; }
+    .table.border .table-head,
+    .table.border .table-body-row {
+      border-bottom: 1px solid #e0e2e1; }
+    .table.border .table-body-child-row,
+    .table.border .child-open {
+      border-bottom: none; }
+    .table.border .child-open ~ .table-body-row:not(.table-body-child-row) {
+      border-top: 1px solid #e0e2e1; }
+    .table.border .table-body-expand-row ~ .table-body-row:not(.table-body-child-row) {
+      border-top: 1px solid #e0e2e1; }
+    .table.border th {
+      position: relative;
+      border-right: 1px solid #e0e2e1; }
+      .table.border th:last-child {
+        border-right: none; }
+      .table.border th[rowspan="1"] {
+        border-bottom: 1px solid #e0e2e1; }
+    .table.border .table-body-row:last-child, .table.border .table-body-row:last-of-type {
+      border-bottom: none; }
+  .table.background {
+    background-color: #f8f8fa; }
+    .table.background .table-head {
+      background-color: #f4f4f4; }
+  .table.striped .table-head {
+    background-color: #f4f4f4; }
+  .table.hover .table-body-row:hover {
+    background-color: #e1e4e6; }
+  .table.click .table-body-row {
+    cursor: pointer; }
+  .table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none; }
+
+.table-head {
+  width: 100%;
+  height: 30px;
+  color: #333333;
+  font-weight: bold; }
+  .table-head tr {
+    height: 30px; }
+
+.table-head-item {
+  text-align: center; }
+
+.table-body-row {
+  width: 100%;
+  height: 50px;
+  color: #333333; }
+  .table-body-row .operations-wrap a {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #e0e2e1; }
+    .table-body-row .operations-wrap a:last-child {
+      border-right: none; }
+  .table-body-row > td {
+    height: 50px;
+    text-align: center; }
+  .table-body-row.has-expand {
+    cursor: pointer; }
+  .table-body-row .table-body-has-child-icon {
+    cursor: pointer;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: top; }
+  .table-body-row.active, .table-body-row.show-expand {
+    background-color: #e6f2ff; }
+
+.striped:nth-child(2n) {
+  background-color: #f8f8fa; }
+
+.table-row-item.limit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.table-body-expand-row {
+  background-color: #f3f3f3;
+  border-right: 1px solid #e0e2e1; }
+
+.table-body-expand-row-wrap {
+  position: relative; }
+  .table-body-expand-row-wrap::before {
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    opacity: 0.3;
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.4), rgba(4, 4, 4, 0)); }
+  .table-body-expand-row-wrap .table {
+    border: none; }
+
+.table-show-more {
+  cursor: pointer; }
+
+.table-sort-button {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px; }
+  .table-sort-button .topTriangle {
+    margin-bottom: 2px; }
+
+.table-body-wrap {
+  overflow-y: scroll; }
+  .table-body-wrap::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+    width: 8px;
+    border-right: 1px solid #e0e2e1;
+    border-left: none; }
+  .table-body-wrap::-webkit-scrollbar-thumb {
+    background-color: #e0e2e1; }
+  .table-body-wrap .table-row-item:last-child {
+    border-right: 1px solid #e0e2e1; }

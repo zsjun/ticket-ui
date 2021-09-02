@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.ant-calendar-picker .ant-input {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #e0e2e1;
+  height: 30px;
+  line-height: 28px;
+  background-color: #f8f8fa;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none; }
+  .ant-calendar-picker .ant-input:hover {
+    border: 1px solid #e0e2e1; }
+  .ant-calendar-picker .ant-input:focus {
+    border-color: #2d84e5;
+    box-shadow: 0 0 3px #2d84e5; }
+  .ant-calendar-picker .ant-input::-webkit-input-placeholder {
+    color: #999; }
+  .ant-calendar-picker .ant-input:-ms-input-placeholder {
+    color: #999; }
+  .ant-calendar-picker .ant-input::-moz-placeholder {
+    color: #999;
+    opacity: 1; }
+  .ant-calendar-picker .ant-input:-moz-placeholder {
+    color: #999;
+    opacity: 1; }
+  .ant-calendar-picker .ant-input.textarea {
+    padding-top: 10px;
+    min-height: 60px;
+    resize: none;
+    overflow: auto;
+    line-height: 20px; }
+    .ant-calendar-picker .ant-input.textarea.error {
+      border-color: #d73e3e;
+      box-shadow: 0 0 5px #d73e3e; }
+  .ant-calendar-picker .ant-input:disabled {
+    color: #999;
+    cursor: not-allowed; }
+  .ant-calendar-picker .ant-input.textarea-wrap {
+    position: relative;
+    padding-bottom: 25px;
+    padding-right: 0; }
+    .ant-calendar-picker .ant-input.textarea-wrap.focus {
+      border-color: #2d84e5;
+      box-shadow: 0 0 3px #2d84e5; }
+    .ant-calendar-picker .ant-input.textarea-wrap.error {
+      outline: 0;
+      border-color: #d73e3e;
+      box-shadow: 0 0 5px #d73e3e; }
+    .ant-calendar-picker .ant-input.textarea-wrap.is-disabled {
+      color: #999;
+      cursor: not-allowed; }
+    .ant-calendar-picker .ant-input.textarea-wrap .max {
+      font-size: 12px;
+      line-height: 1;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      color: #333333; }
+      .ant-calendar-picker .ant-input.textarea-wrap .max i {
+        font-style: normal;
+        color: #2b75c8;
+        font-weight: bold; }
+    .ant-calendar-picker .ant-input.textarea-wrap .textarea-content {
+      height: 100%;
+      width: 100%;
+      overflow: auto; }
+      .ant-calendar-picker .ant-input.textarea-wrap .textarea-content:focus {
+        outline: none; }
+      .ant-calendar-picker .ant-input.textarea-wrap .textarea-content:empty:before {
+        content: attr(placeholder);
+        white-space: pre-line;
+        color: #999; }
+      .ant-calendar-picker .ant-input.textarea-wrap .textarea-content:not(:empty):before {
+        content: ""; }
+  .ant-calendar-picker .ant-input.error {
+    outline: 0;
+    border-color: #d73e3e;
+    box-shadow: 0 0 5px #d73e3e; }
+
+.ant-calendar-picker .ant-calendar-range-picker-input {
+  text-align: left; }
+
+.ant-calendar-picker .ant-calendar-range-picker-input {
+  max-width: 135px;
+  min-width: 110px; }
+  .ant-calendar-picker .ant-calendar-range-picker-input:last-of-type {
+    padding-left: 10px; }

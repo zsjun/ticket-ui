@@ -1,0 +1,65 @@
+@import "../../../styles/assets/constant.scss";
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &.open {
+    .dropdown-overlay {
+      display: block;
+    }
+  }
+  &.disabled {
+    .dropdown-trigger-item {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.dropdown-trigger-item {
+  cursor: pointer;
+}
+
+.dropdown-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+
+  &.open {
+    display: block;
+  }
+  &.inline {
+    width: 100%;
+    top: 100%;
+    border-top: none;
+  }
+}
+
+.dropdown-trigger-item {
+  padding: 0 10px;
+  padding-right: 40px;
+  background-color: #fff;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid $borderColor;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid #333333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+}

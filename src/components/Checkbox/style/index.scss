@@ -1,0 +1,36 @@
+@import "../../Form/style/common.scss";
+
+.checkbox-label {
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  &.disabled {
+    @include disabledStyle();
+    &.checked {
+      .checkbox-icon {
+        fill: #999;
+      }
+    }
+  }
+
+  .checkbox-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    margin-left: 1px;
+  }
+
+  &.checked {
+    .checkbox-icon {
+      fill: #3186f5;
+    }
+  }
+}
+.checkbox {
+  display: none;
+  margin-right: 5px;
+  margin-left: 1px;
+  vertical-align: 1px;
+}

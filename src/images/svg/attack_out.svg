@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.2514 0.8604 5.4614 0.8604 5.4614 8 0.2514 8"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="DB默认态备份" transform="translate(-1139.000000, -379.000000)">
+            <g id="Group-Copy-4" transform="translate(0.000000, -1.000000)">
+                <g id="Group-38">
+                    <g id="Group-29" transform="translate(0.000000, 0.991836)">
+                        <g id="编组-3" transform="translate(845.000000, 169.000000)">
+                            <g id="编组-4">
+                                <g id="编组" transform="translate(294.000000, 209.008164)">
+                                    <polygon id="Fill-1" points="0 9.1392 2.25 11.7482 3.551 11.3312 1.445 8.4142"></polygon>
+                                    <g transform="translate(2.000000, 0.331700)">
+                                        <path d="M5.7653,8.0776 C5.4323,8.0776 5.1643,7.8086 5.1643,7.4766 C5.1643,7.1436 5.4323,6.8746 5.7653,6.8746 C6.0983,6.8746 6.3673,7.1436 6.3673,7.4766 C6.3673,7.8086 6.0983,8.0776 5.7653,8.0776 L5.7653,8.0776 Z M0.0003,7.7086 L1.8753,10.8336 L4.2113,10.2446 L1.3073,18.9936 L12.2913,18.9936 L7.6253,4.3336 L0.0003,7.7086 Z" id="Fill-2" ></path>
+                                        <polygon id="Fill-4" points="10.655 2.3081 10.085 0.6681 0.585 2.5381 3.125 5.4581"></polygon>
+                                        <polygon id="Fill-6" points="9.0612 5.9302 11.5912 5.0302 10.9022 3.0402 8.4212 3.9202"></polygon>
+                                        <polygon id="Fill-8" points="10.0417 9.02 12.6617 8.09 11.9217 5.97 9.3617 6.88"></polygon>
+                                        <polygon id="Fill-10" points="10.9518 11.8701 13.6408 10.9201 12.9918 9.0301 10.3418 9.9701"></polygon>
+                                        <g transform="translate(11.000000, 11.000000)">
+                                            <mask id="mask-2" >
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <g id="Clip-13"></g>
+                                            <polygon id="Fill-12" points="2.9714 0.8604 0.2514 1.8304 2.2114 8.0004 5.4614 8.0004"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
