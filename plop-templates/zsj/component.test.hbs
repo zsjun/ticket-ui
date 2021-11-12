@@ -1,0 +1,57 @@
+import React from "react";
+import { render, fireEvent } from "@testing-library/react";
+import {{compName}}, { {{compName}}Size1,{{compName}}Props } from "./index";
+
+const defaultProps: {{compName}}Props = {
+  onClick: jest.fn(),
+};
+
+const testProps: {{compName}}Props = {
+  btnType: "primary",
+  size: "lg",
+  className: "klass",
+};
+
+const disabledProps: {{compName}}Props = {
+  disabled: true,
+  onClick: jest.fn(),
+};
+
+describe("test {{compName}} component", () => {
+  it("should render the correct default {{compName}}", () => {
+    const wrapper = render(<{{compName}} {...defaultProps}>Nice</{{compName}}>);
+    const element = wrapper.getByText("Nice") as HTMLButtonElement;
+    expect(element).toBeInTheDocument();
+    expect(element.tagName).toEqual("{{compName}}");
+    expect(element).toHaveClass("btn btn-default");
+    expect(element.disabled).toBeFalsy();
+    fireEvent.click(element);
+    expect(defaultProps.onClick).toHaveBeenCalled();
+  });
+  it("should render the correct component based on different props", () => {
+    const wrapper = render(<{{compName}} {...testProps}>Nice</{{compName}}>);
+    const element = wrapper.getByText("Nice");
+    expect(element).toBeInTheDocument();
+    expect(element).toHaveClass("btn-primary btn-lg klass");
+  });
+  it("should render a link when btnType equals link and href is provided", () => {
+    console.log({{compName}}Size1.link);
+    const wrapper = render(
+      <{{compName}} btnType={ {{compName}}Size1.link } href="http://wwww.baidu.com">
+        Link
+      </{{compName}}>
+    );
+    const element = wrapper.getByText("Link");
+    expect(element).toBeInTheDocument();
+    expect(element.tagName).toEqual("A");
+    expect(element).toHaveClass("btn btn-link");
+  });
+  it("should render disabled {{compName}} when disabled set to true", () => {
+    const wrapper = render(<{{compName}} {...disabledProps}>Nice</{{compName}}>);
+    const element = wrapper.getByText("Nice") as HTMLButtonElement;
+    expect(element).toBeInTheDocument();
+    expect(element.disabled).toBeTruthy();
+    fireEvent.click(element);
+    expect(disabledProps.onClick).not.toHaveBeenCalled();
+  });
+});

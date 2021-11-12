@@ -1,0 +1,64 @@
+import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from "react";
+import classNames from "classnames";
+
+export type {{compName}}Size = "lg" | "sm";
+export enum {{compName}}Size1 {
+  "lg" = "lg",
+  "sm" = "sm",
+  "link" = "link",
+}
+export type {{compName}}Type = "primary" | "default" | "danger" | "link";
+interface Base{{compName}}Props {
+  className?: string;
+  /** 设置{{compName}}的禁用 */
+  disabled?: boolean;
+  /** 设置{{compName}}的尺寸 */
+  size?: {{compName}}Size;
+  /** 设置{{compName}}的类型 */
+  btnType?: {{compName}}Type;
+  children?: React.ReactNode;
+  href?: string;
+}
+// 合并属性
+type Native{{compName}}Props = Base{{compName}}Props & ButtonHTMLAttributes<HTMLElement>;
+type Anchor{{compName}}Props = Base{{compName}}Props & AnchorHTMLAttributes<HTMLElement>;
+// Partial 把属性变成可选的
+export type {{compName}}Props = Partial<Native{{compName}}Props & Anchor{{compName}}Props>;
+/**
+ * 页面中最常用的的按钮元素，适合于完成特定的交互
+ * ### 引用方法
+ *
+ * ~~~js
+ * import { {{compName}} } from 'stonewise-ui'
+ * ~~~
+ */
+export const {{compName}}: FC<{{compName}}Props> = (props) => {
+  const { btnType, className, disabled, size, children, href, ...restProps } =
+    props;
+  // btn、btn-lg、btn-primary
+  const classes = classNames("btn", className, {
+    [`btn-${btnType}`]: btnType,
+    [`btn-${size}`]: size,
+    disabled: btnType === "link" && disabled,
+  });
+  if (btnType === "link" && href) {
+    return (
+      <a className={classes} href={href} {...restProps}>
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <{{compName}} className={classes} disabled={disabled} {...restProps}>
+        {children}
+      </{{compName}}>
+    );
+  }
+};
+
+{{compName}}.defaultProps = {
+  disabled: false,
+  btnType: "default",
+};
+
+export default {{compName}};

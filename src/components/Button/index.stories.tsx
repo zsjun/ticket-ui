@@ -10,6 +10,6 @@ const Template: ComponentStory<typeof Button> = (args) => (
   <Button {...args}>确定</Button>
 );
 export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
-};
+// LoggedIn.args = {
+//   user: {},
+// };

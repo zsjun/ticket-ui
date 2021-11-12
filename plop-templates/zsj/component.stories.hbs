@@ -1,0 +1,15 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import {{compName}} from "./index";
+
+export default {
+  title: "{{compName}}",
+  component: {{compName}},
+} as ComponentMeta<typeof {{compName}}>;
+const Template: ComponentStory<typeof {{compName}}> = (args) => (
+  <{{compName}} {...args}>确定</{{compName}}>
+);
+export const LoggedIn = Template.bind({});
+LoggedIn.args = {
+  user: {},
+};

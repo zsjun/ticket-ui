@@ -1,3 +1,4 @@
+@import "antd/dist/antd.css";
 // config
 @import "variables";
 
@@ -12,30 +13,8 @@
 
 // button
 @import "../components/Button/index";
+// Box
+@import "../components/Box/index";
 
-// alert
-// @import "../components/Alert/style";
-
-// menu
-// @import "../components/Menu/style";
-
-// tabs
-// @import "../components/Tabs/style";
-
-// icon
-// @import "../components/Icon/style";
-
-// input
-// @import "../components/Input/style";
-
-// // AutoComplete
-// @import "../components/AutoComplete/style";
-
-// // Select
-// @import "../components/Select/style";
-
-// // Upload
-// @import "../components/Upload/style";
-
-// // Progress
-// @import "../components/Progress/style";
+// new components
+@import "../components/Icon/index";
