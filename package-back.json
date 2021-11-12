@@ -4,8 +4,6 @@
   "private": false,
   "author": "zsj",
   "description": "react stonewise ui",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "main": "dist/test-bricks-teach.umd.js",
   "module": "dist/test-bricks-teach.esm.js",
