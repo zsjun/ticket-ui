@@ -9,49 +9,27 @@
   "keywords": [
     "Component",
     "UI",
-    "React"
+    "React",
+    "stonewise-ui"
   ],
   "homepage": "",
   "repository": {},
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@rollup/plugin-image": "^2.1.1",
-    "@types/lodash": "^4.14.176",
-    "classnames": "^2.3.1",
-    "lodash": "^4.17.21",
-    "react-app-polyfill": "^2.0.0",
-    "react-dev-utils": "^11.0.3",
-    "react-refresh": "^0.8.3"
-  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && npm run build:esm && npm run build:umd",
-    "dev": "npm run clean && npm run dev:umd",
-    "build:esm": "rollup  --config ./rollup.config.js",
-    "build:umd": "rollup --config build/rollup.umd.config.js",
-    "lint": "eslint --ext js,ts,tsx src",
-    "prepublish": "yarn run lint && yarn run test:watch && yarn run build",
-    "prepublished": "yarn run lint && yarn run build",
-    "start": "node scripts/start.js",
+    "build": "yarn run clean && yarn run build:esm:umd",
+    "build:esm:umd": "rollup  --config ./rollup.config.js",
     "clean": "rimraf ./dist",
-    "test": "node scripts/test.js",
-    "test:watch": "cross-env CI=true node scripts/test.js",
+    "lint": "eslint --ext js,ts,tsx src",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "build-ts": "tsc -p tsconfig.build.json",
-    "build-css": "node-sass ./src/styles/index.scss ./build/index.css"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build-storybook": "build-storybook"
   },
   "browserslist": {
     "production": [
@@ -65,72 +43,22 @@
       "last 1 safari version"
     ]
   },
-  "jest": {
-    "roots": [
-      "<rootDir>/src"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
-    ],
-    "setupFiles": [
-      "react-app-polyfill/jsdom"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.ts"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
-    ],
-    "testEnvironment": "jsdom",
-    "testRunner": "<rootDir>/node_modules/jest-circus/runner.js",
-    "transform": {
-      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/config/jest/babelTransform.js",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
-    ],
-    "modulePaths": [],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
-    },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ],
-    "watchPlugins": [
-      "jest-watch-typeahead/filename",
-      "jest-watch-typeahead/testname"
-    ],
-    "resetMocks": true
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "yarn run test:watch && yarn run lint"
     }
   },
+  "dependencies": {
+    "@types/lodash": "^4.14.176",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21"
+
+  },
   "devDependencies": {
-    "@babel/core": "7.12.3",
-    "@babel/helper-validator-identifier": "^7.15.7",
-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
+    "react-refresh": "^0.8.3",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-syntax-private-property-in-object": "^7.14.5",
+    "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
@@ -139,12 +67,10 @@
     "@storybook/manager-webpack5": "^6.3.12",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.3.12",
-    "@svgr/webpack": "5.5.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
     "@types/classnames": "^2.3.1",
-    "@types/jest": "^26.0.15",
+    "@types/jest": "^27.0.2",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -152,17 +78,10 @@
     "@typescript-eslint/parser": "^4.5.0",
     "antd": "^4.16.13",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.6.0",
-    "babel-loader": "8.1.0",
-    "babel-plugin-named-asset-import": "^0.3.7",
+    "babel-jest": "^27.3.1",
+    "babel-loader": "^8.2.3",
     "babel-preset-react-app": "^10.0.0",
-    "bfj": "^7.0.2",
-    "camelcase": "^6.1.0",
-    "case-sensitive-paths-webpack-plugin": "2.3.0",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.3.0",
-    "dotenv": "8.2.0",
-    "dotenv-expand": "5.1.0",
     "eslint": "^7.11.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.2.0",
@@ -173,50 +92,27 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.9.2",
     "eslint-webpack-plugin": "^2.5.2",
-    "file-loader": "6.1.1",
-    "fs-extra": "^9.0.1",
-    "html-webpack-plugin": "4.5.0",
     "husky": "^7.0.2",
-    "identity-obj-proxy": "3.0.0",
-    "jest": "26.6.0",
+    "jest": "^27.3.1",
     "jest-circus": "^27.3.1",
-    "jest-resolve": "26.6.0",
-    "jest-watch-typeahead": "0.6.1",
-    "mini-css-extract-plugin": "0.11.3",
-    "node-sass": "^5.0.0",
-    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "jest-watch-typeahead": "^1.0.0",
+    "node-sass": "^6.0.1",
     "plop": "^2.7.6",
-    "pnp-webpack-plugin": "1.6.4",
     "postcss": "^8.3.11",
-    "postcss-flexbugs-fixes": "4.2.1",
     "postcss-import": "^14.0.2",
-    "postcss-loader": "3.0.0",
-    "postcss-normalize": "8.0.1",
-    "postcss-preset-env": "6.7.0",
-    "postcss-safe-parser": "5.0.2",
-    "prompts": "2.4.0",
     "react": "^17.0.2",
+    "react-app": "^1.1.2",
+    "react-app-polyfill": "^2.0.0",
+    "react-dev-utils": "^11.0.3",
     "react-dom": "^17.0.2",
-    "resolve": "1.18.1",
-    "resolve-url-loader": "^3.1.2",
     "rimraf": "^3.0.2",
     "rollup": "^2.59.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
-    "sass": "^1.42.1",
-    "sass-loader": "^12.1.0",
-    "semver": "7.3.2",
-    "style-loader": "^3.3.0",
-    "terser-webpack-plugin": "4.2.3",
-    "ts-pnp": "1.2.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
     "tslib": "^2.3.1",
-    "typescript": "4.1.6",
-    "url-loader": "4.1.1",
-    "web-vitals": "^1.0.1",
-    "webpack": "4.44.2",
-    "webpack-dev-server": "3.11.1",
-    "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "5.1.4"
+    "typescript": "4.1.6"
   }
 }

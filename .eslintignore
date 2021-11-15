@@ -1,0 +1,17 @@
+config/
+scripts/
+node_modules/
+.eslintrc.js
+postcss.config.js
+webpack.config.js
+src/assets/*
+assets/
+jsconfig.json
+webpack.*
+jsconfig.json
+public/*
+public/*/**
+babel.config.js
+plop-templates/
+plopConfig/
+plopfile.js

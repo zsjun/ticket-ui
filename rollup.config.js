@@ -20,10 +20,24 @@ const overrides = {
 export { file };
 const config = {
   input: "src/index.tsx",
-  output: {
-    file: file("esm"),
-    format: "es",
-  },
+  output: [
+    {
+      file: file("esm"),
+      format: "es",
+    },
+    {
+      // 代表全局组件库的变量
+      name: "stonewise-ui",
+      file: file("umd"),
+      format: "umd",
+      // 对应external
+      globals: {
+        lodash: "lodash",
+        react: "React",
+        antd: "antd",
+      },
+    },
+  ],
   plugins: [
     nodeResolve(),
     typescript({ tsconfigOverride: overrides }),

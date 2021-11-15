@@ -23,6 +23,7 @@ interface BaseBoxProps {
   children?: React.ReactNode;
   href?: string;
 }
+export type { BaseBoxProps };
 /**
  * 页面中常用的组件容器
  * ### 引用方法

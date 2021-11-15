@@ -1,4 +1,4 @@
-@import "antd/dist/antd.css";
+@import "~antd/dist/antd.css";
 // config
 @import "variables";
 
@@ -11,10 +11,5 @@
 // animation
 @import "animation";
 
-// button
-@import "../components/Button/index";
 // Box
 @import "../components/Box/index";
-
-// new components
-@import "../components/Icon/index";
