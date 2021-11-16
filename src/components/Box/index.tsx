@@ -14,16 +14,18 @@ const isBoxShow = (data: any) => {
   return data && data !== 0;
 };
 
-interface BaseBoxProps {
+export interface BaseBoxProps {
+  /** 设置Box的类名 */
   className?: string;
+  /** 设置Box的样式 */
   style?: Object;
+  /** 设置Box是否真是为空，当为[]或者{}的时候，展示没有数据 */
   data?: any;
   /** 设置Box是否在加载 */
   isLoading?: boolean;
+  /** 设置Box的子元素 */
   children?: React.ReactNode;
-  href?: string;
 }
-export type { BaseBoxProps };
 /**
  * 页面中常用的组件容器
  * ### 引用方法
@@ -32,7 +34,7 @@ export type { BaseBoxProps };
  * import { Box } from 'stonewise-ui'
  * ~~~
  */
-export const Box: FC<BaseBoxProps> = (props) => {
+const Box: FC<BaseBoxProps> = (props) => {
   const {
     isLoading,
     children,

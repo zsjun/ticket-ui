@@ -1,9 +1,12 @@
-@import "~antd/dist/antd.css";
+// @import "~antd/dist/antd.css";
 // config
 @import "variables";
 
 // layout
 @import "reboot";
+
+// common
+@import "common";
 
 // mixin
 @import "mixins";
@@ -13,3 +16,9 @@
 
 // Box
 @import "../components/Box/index";
+
+// WhiteTopBar
+
+@import "../components/WhiteTopBar/index";
+
+// new components
