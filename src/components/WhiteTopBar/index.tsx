@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-import React, { FC, memo, useState } from "react";
+import React, { FC, memo } from "react";
 import classNames from "classnames";
 import { LeftOutlined } from "@ant-design/icons";
 export interface historyProps {
   goBack: () => void;
 }
 export interface BaseWhiteTopBarProps {
-=======
-import React, { FC, memo } from "react";
-import classNames from "classnames";
-import { LeftOutlined } from "@ant-design/icons";
-interface historyProps {
-  goBack: () => {};
-}
-interface BaseWhiteTopBarProps {
->>>>>>> 3ca177c8dec6a2b0599e5b745d6dd2f72efad939
   className?: string;
   /** 设置WhiteTopBar的返回是否使用默认的history返回,true为不使用 */
   isBack: boolean;
