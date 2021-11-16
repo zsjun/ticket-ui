@@ -52,10 +52,8 @@
     "@types/lodash": "^4.14.176",
     "classnames": "^2.3.1",
     "lodash": "^4.17.21"
-
   },
   "devDependencies": {
-    "react-refresh": "^0.8.3",
     "@babel/core": "^7.16.0",
     "@babel/plugin-syntax-private-property-in-object": "^7.14.5",
     "@rollup/plugin-image": "^2.1.1",
@@ -105,6 +103,7 @@
     "react-app-polyfill": "^2.0.0",
     "react-dev-utils": "^11.0.3",
     "react-dom": "^17.0.2",
+    "react-refresh": "^0.8.3",
     "rimraf": "^3.0.2",
     "rollup": "^2.59.0",
     "rollup-plugin-commonjs": "^10.1.0",
