@@ -7,18 +7,13 @@ export default {
   component: WhiteTopBar,
 } as ComponentMeta<typeof WhiteTopBar>;
 const Template: ComponentStory<typeof WhiteTopBar> = (args) => (
-  <WhiteTopBar
-    {...args}
-    title={1122}
-    // isBack
-    // onBackClick={() => {
-    //   console.log(2233);
-    // }}
-  >
-    确定111
-  </WhiteTopBar>
+  <WhiteTopBar {...args}>{args.children}</WhiteTopBar>
 );
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
+export const DefaultWhiteTopBar = Template.bind({});
+DefaultWhiteTopBar.args = {
+  isBack: true,
+  onBackClick: () => {
+    console.log(11);
+  },
+  children: 11223,
 };
