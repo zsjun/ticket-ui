@@ -16,11 +16,10 @@ export type default{{compName}}Props =Base{{compName}}Props;
  * ~~~
  */
 export const {{compName}}: FC<Base{{compName}}Props> = (props) => {
-  const {className, children, href, ...restProps } =
+  const {className, children, ...restProps } =
     props;
-  // btn、btn-lg、btn-primary
   const classes = classNames("{{lowerCase compName}}-wrap", className, {
-    [`btn-${btnType}`]: btnType,
+    [`{{lowerCase compName}}`]:false,
   });
   return (
     <div className={classes} {...restProps}>

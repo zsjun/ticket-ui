@@ -7,9 +7,9 @@ export default {
   component: {{compName}},
 } as ComponentMeta<typeof {{compName}}>;
 const Template: ComponentStory<typeof {{compName}}> = (args) => (
-  <{{compName}} {...args}>确定</{{compName}}>
+  <{{compName}} {...args}>{args.children}</{{compName}}>
 );
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
+export const Defatul{{compName}} = Template.bind({});
+// 传入属性
+Defatul{{compName}}.args = {
 };

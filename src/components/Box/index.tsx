@@ -46,7 +46,6 @@ const Box: FC<BaseBoxProps> = (props) => {
   const classes = classNames("box-wrap", className);
   // const show = false;
   const show = isBoxShow(data);
-  console.log(11, isLoading, style);
   return (
     <div {...restProps} className={classes} style={style}>
       {isLoading && (

@@ -1,4 +1,4 @@
-@import "~antd/dist/antd.css";
+// @import "~antd/dist/antd.css";
 // config
 @import "variables";
 
@@ -22,3 +22,5 @@
 @import "../components/WhiteTopBar/index";
 
 // new components
+@import "../components/IconTooltip/index";
+@import "../components/Button/index";

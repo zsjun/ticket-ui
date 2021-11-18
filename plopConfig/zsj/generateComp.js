@@ -84,7 +84,7 @@ module.exports = {
       type: "modify",
       path: defaultCssPath,
       pattern: /(\/\/ new components)/g,
-      template: '$1\n@import {{compName}} "../components/{{compName}}/index";',
+      template: '$1\n@import "../components/{{compName}}/index";',
     });
     actions.push({
       type: "modify",

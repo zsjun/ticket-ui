@@ -12,7 +12,7 @@ import commonjs from "rollup-plugin-commonjs";
 import postcssImport from "postcss-import";
 // 处理 apply 以及内置 mixin
 // import tailwindcss from "tailwindcss";
-const path = require("path");
+// const path = require("path");
 
 const file = (type) => `dist/index.${type}.js`;
 
