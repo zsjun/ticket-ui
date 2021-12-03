@@ -147,15 +147,11 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
   const mouseEnter = () => {
     const imgEl = imgRef.current;
     imgEl.onmousewheel = (e: any) => {
-      console.log(1224, multiple);
       let tempMultiple: number = 0;
       setMultiple((i) => (tempMultiple = i));
-      console.log();
       if (e.deltaY > 0 && tempMultiple < 300) {
-        console.log(1122);
         setMultiple((multiple) => multiple + 10);
       } else if (e.deltaY < 0 && tempMultiple > 100) {
-        console.log(333);
         setMultiple((multiple) => multiple - 10);
       }
     };
@@ -165,7 +161,6 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
     imgEl.onmousewheel = null;
   };
   const { size = 0, imgurl } = props;
-  console.log(333, multiple);
   return (
     <div
       className={classes}
