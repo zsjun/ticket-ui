@@ -1,0 +1,27 @@
+.zoomPhoto-wrap {
+  position: relative;
+  color: $body-color;
+  background-color: #e8e8e870;
+  overflow: hidden;
+  border: 1px solid #e8e8e870;
+  .templateImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .previewImg {
+    // height: auto;
+    // width: auto;
+    position: relative;
+  }
+
+  .fullWidth {
+    width: 100%;
+    visibility: visible;
+  }
+
+  .fullHeight {
+    height: 100%;
+    visibility: visible;
+  }
+}

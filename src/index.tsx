@@ -2,6 +2,7 @@
 import "./styles/index.scss";
 export { default as Box } from "./components/Box/index";
 // new components
+export { default as ZoomPhoto } from "./components/ZoomPhoto/index";
 export { default as PageHeader } from "./components/PageHeader/index";
 export { default as Switch } from "./components/Switch/index";
 export { default as Tag } from "./components/Tag/index";
