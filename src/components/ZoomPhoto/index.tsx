@@ -8,6 +8,8 @@ import React, {
 } from "react";
 import classNames from "classnames";
 import urlImg from "./ss.png";
+import zoomInPng from "./zoom-in.png";
+import zoomOutPng from "./zoom-out.png";
 
 export type ZoomPhotoType = "danger" | "link";
 interface BaseZoomPhotoProps {
@@ -34,16 +36,16 @@ export type defaultZoomPhotoProps = BaseZoomPhotoProps;
  * ~~~
  */
 export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
-  let [maxSize, setMaxSize] = useState<Size>({
+  const [maxSize, setMaxSize] = useState<Size>({
     w: 0,
     h: 0,
   });
-  let [imgPos, setImgPos] = useState<Pos>({
+  const [imgPos, setImgPos] = useState<Pos>({
     x: 0,
     y: 0,
   });
-  let [multiple, setMultiple] = useState<number>(100);
-  let [imgClass, setImgClass] = useState<string>("");
+  const [multiple, setMultiple] = useState<number>(100);
+  const [imgClass, setImgClass] = useState<string>("");
   const imgRef = useRef<any>();
 
   const { className, children, ...restProps } = props;
@@ -60,6 +62,16 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       }
     }
   }, [imgRef, imgClass, setImgClass]);
+  const zoomOutPhoto = () => {
+    if (multiple < 300) {
+      setMultiple((multiple) => multiple + 10);
+    }
+  };
+  const zoomInPhoto = () => {
+    if (multiple > 100) {
+      setMultiple((multiple) => multiple + 10);
+    }
+  };
   const handleInit = () => {
     setMaxSize({
       w: 0,
@@ -138,7 +150,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       console.log(1224, multiple);
       let tempMultiple: number = 0;
       setMultiple((i) => (tempMultiple = i));
-      console.log()
+      console.log();
       if (e.deltaY > 0 && tempMultiple < 300) {
         console.log(1122);
         setMultiple((multiple) => multiple + 10);
@@ -152,35 +164,60 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
     const imgEl = imgRef.current;
     imgEl.onmousewheel = null;
   };
-  const { size, imgurl } = props;
+  const { size = 0, imgurl } = props;
   console.log(333, multiple);
   return (
     <div
+      className={classes}
       style={{
         width: size,
-        height: size,
+        height: size + 40,
       }}
-      className={classes}
-      {...restProps}
     >
-      <div
-        className="templateImg"
-        style={{ width: size, height: size }}
-        onMouseDown={dragImgStart}
-        onMouseEnter={mouseEnter}
-        onMouseLeave={mouseLeave}
-      >
+      <div className="transform-scale">
         <img
-          src={urlImg}
-          alt=""
-          style={{
-            transform: `scale(${multiple * 0.01})`,
-            left: imgPos.x,
-            top: imgPos.y,
-          }}
-          className={`previewImg ${imgClass}`}
-          ref={imgRef}
+          src={zoomInPng}
+          alt="缩小"
+          className="transform-btn-left"
+          onClick={zoomInPhoto}
         />
+        &nbsp;&nbsp;
+        <p>{multiple}%</p>
+        &nbsp;&nbsp;
+        <img
+          src={zoomOutPng}
+          alt="放大"
+          className="transform-btn-right"
+          onClick={zoomOutPhoto}
+        />
+      </div>
+      <div
+        style={{
+          width: size,
+          height: size,
+        }}
+        className="templateImg-wrap"
+        {...restProps}
+      >
+        <div
+          className="templateImg"
+          style={{ width: size, height: size }}
+          onMouseDown={dragImgStart}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+        >
+          <img
+            src={urlImg}
+            alt=""
+            style={{
+              transform: `scale(${multiple * 0.01})`,
+              left: imgPos.x,
+              top: imgPos.y,
+            }}
+            className={`previewImg ${imgClass}`}
+            ref={imgRef}
+          />
+        </div>
       </div>
     </div>
   );
