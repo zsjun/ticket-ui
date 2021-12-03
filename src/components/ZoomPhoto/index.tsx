@@ -69,7 +69,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
   };
   const zoomInPhoto = () => {
     if (multiple > 100) {
-      setMultiple((multiple) => multiple + 10);
+      setMultiple((multiple) => multiple - 10);
     }
   };
   const handleInit = () => {
