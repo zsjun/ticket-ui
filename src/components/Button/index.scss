@@ -1,4 +1,40 @@
-.button-wrap {
+.button-wrap-primary {
   position: relative;
-  color: $body-color;
+  .ant-btn {
+    background-color: #4d8fff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    height: 30px;
+    line-height: 1;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.button-wrap-default {
+  position: relative;
+  .ant-btn {
+    border-radius: 5px;
+    border: 1px solid #606060;
+    font-size: 14px;
+    height: 28px;
+    color: #606060;
+    line-height: 1;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.button-wrap-text {
+  position: relative;
+  .ant-btn {
+    font-size: 14px;
+    line-height: 1;
+    color: #4d8fff;
+    border: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
