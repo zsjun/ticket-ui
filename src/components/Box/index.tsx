@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { Spin } from "antd";
 import { isObject, isEmpty } from "lodash";
 import noDataPng from "./box-no-data.png";
+
 const isBoxShow = (data: any) => {
   // 正在加载时，展示Box
   if (Array.isArray(data)) {

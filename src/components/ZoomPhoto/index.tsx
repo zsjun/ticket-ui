@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import classNames from "classnames";
-import urlImg from "./ss.png";
+// import urlImg from "./ss.png";
 import zoomInPng from "./zoom-in.png";
 import zoomOutPng from "./zoom-out.png";
 
@@ -72,17 +72,17 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       setMultiple((multiple) => multiple - 10);
     }
   };
-  const handleInit = () => {
-    setMaxSize({
-      w: 0,
-      h: 0,
-    });
-    setImgClass("");
-    setImgPos({
-      x: 0,
-      y: 0,
-    });
-  };
+  // const handleInit = () => {
+  //   setMaxSize({
+  //     w: 0,
+  //     h: 0,
+  //   });
+  //   setImgClass("");
+  //   setImgPos({
+  //     x: 0,
+  //     y: 0,
+  //   });
+  // };
   const dragImgStart = (event: MouseEvent) => {
     event.preventDefault();
     const firstX = event.clientX;
@@ -202,7 +202,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
           onMouseLeave={mouseLeave}
         >
           <img
-            src={urlImg}
+            src={imgurl}
             alt=""
             style={{
               transform: `scale(${multiple * 0.01})`,

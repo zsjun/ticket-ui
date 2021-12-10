@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: PingFangSC-Regular, Arial;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -412,7 +412,7 @@ main {
       width: 130px; }
 
 .box-wrap .box-loading {
-    min-height: 200px;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -438,3 +438,239 @@ main {
 
 .whiteTopBar-wrap .lft .title {
       margin-left: 10px; }
+
+.zoomPhoto-wrap {
+  position: relative;
+  color: #212529;
+  background-color: #e8e8e870;
+  border: 1px solid #e8e8e870;
+  padding-top: 40px; }
+
+.zoomPhoto-wrap .transform-scale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.zoomPhoto-wrap .transform-scale .transform-btn-left {
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 1px; }
+
+.zoomPhoto-wrap .transform-scale .transform-btn-right {
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 1px; }
+
+.zoomPhoto-wrap .templateImg-wrap {
+    color: #212529;
+    overflow: hidden; }
+
+.zoomPhoto-wrap .templateImg {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.zoomPhoto-wrap .previewImg {
+    position: relative; }
+
+.zoomPhoto-wrap .fullWidth {
+    width: 100%;
+    visibility: visible; }
+
+.zoomPhoto-wrap .fullHeight {
+    height: 100%;
+    visibility: visible; }
+
+.pageHeader-wrap {
+  position: relative;
+  color: #212529; }
+
+.switch-wrap {
+  position: relative;
+  color: #212529; }
+
+.tag-wrap {
+  position: relative;
+  color: #212529; }
+
+.collapse-wrap {
+  position: relative;
+  color: #212529; }
+
+.configProvider-wrap {
+  position: relative;
+  color: #212529; }
+
+.popover-wrap {
+  position: relative;
+  color: #212529; }
+
+.tabs-wrap {
+  position: relative;
+  color: #212529; }
+
+.empty-wrap {
+  position: relative;
+  color: #212529; }
+
+.drawer-wrap {
+  position: relative;
+  color: #212529; }
+
+.col-wrap {
+  position: relative;
+  color: #212529; }
+
+.row-wrap {
+  position: relative;
+  color: #212529; }
+
+.badge-wrap {
+  position: relative;
+  color: #212529; }
+
+.table-wrap {
+  position: relative;
+  color: #212529; }
+
+.popconfirm-wrap {
+  position: relative;
+  color: #212529; }
+
+.message-wrap {
+  position: relative;
+  color: #212529; }
+
+.tooltip-wrap {
+  position: relative;
+  color: #212529; }
+
+.progress-wrap {
+  position: relative;
+  color: #212529; }
+
+.spin-wrap {
+  position: relative;
+  color: #212529; }
+
+.modal-wrap {
+  position: relative;
+  color: #212529; }
+
+.upload-wrap {
+  position: relative;
+  color: #212529; }
+
+.transfer-wrap {
+  position: relative;
+  color: #212529; }
+
+.slider-wrap {
+  position: relative;
+  color: #212529; }
+
+.select-wrap {
+  position: relative;
+  color: #212529; }
+
+.radio-wrap {
+  position: relative;
+  color: #212529; }
+
+.inputNumber-wrap {
+  position: relative;
+  color: #212529; }
+
+.input-wrap {
+  position: relative;
+  color: #212529; }
+
+.form-wrap {
+  position: relative;
+  color: #212529; }
+
+.datePicker-wrap {
+  position: relative;
+  color: #212529; }
+
+.checkbox-wrap {
+  position: relative;
+  color: #212529; }
+
+.autoComplete-wrap {
+  position: relative;
+  color: #212529; }
+
+.pagination-wrap {
+  position: relative;
+  color: #212529; }
+
+.menu-wrap {
+  position: relative;
+  color: #212529; }
+
+.dropdown-wrap {
+  position: relative;
+  color: #212529; }
+
+.space-wrap {
+  position: relative;
+  color: #212529; }
+
+.divider-wrap {
+  position: relative;
+  color: #212529; }
+
+.iconTooltip-wrap {
+  position: relative;
+  color: #212529; }
+
+.button-wrap-primary {
+  position: relative; }
+
+.button-wrap-primary .ant-btn {
+    background-color: #4d8fff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    height: 30px;
+    line-height: 1; }
+
+.button-wrap-primary .ant-btn:hover {
+      opacity: 0.8; }
+
+.button-wrap-default {
+  position: relative; }
+
+.button-wrap-default .ant-btn {
+    border-radius: 5px;
+    border: 1px solid #606060;
+    font-size: 14px;
+    height: 28px;
+    color: #606060;
+    line-height: 1; }
+
+.button-wrap-default .ant-btn:hover {
+      opacity: 0.8; }
+
+.button-wrap-text {
+  position: relative; }
+
+.button-wrap-text .ant-btn {
+    font-size: 14px;
+    line-height: 1;
+    color: #4d8fff;
+    border: none; }
+
+.button-wrap-text .ant-btn:hover {
+      opacity: 0.8; }
