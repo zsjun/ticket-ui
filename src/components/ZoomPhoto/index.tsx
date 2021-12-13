@@ -43,18 +43,22 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
     w: 0,
     h: 0,
   });
+
   const [imgPos, setImgPos] = useState<Pos>({
     x: 0,
     y: 0,
   });
+
   const [multiple, setMultiple] = useState<number>(100);
   const [imgClass, setImgClass] = useState<string>("");
   const imgRef = useRef<any>();
 
   const { className = "", children, ...restProps } = props;
+
   const classes = classNames("zoomPhoto-wrap", className, {
     [`zoomPhoto`]: false,
   });
+
   useEffect(() => {
     const imgEl = imgRef.current;
     if (imgEl) {
@@ -65,16 +69,19 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       }
     }
   }, [imgRef, imgClass, setImgClass]);
+
   const zoomOutPhoto = () => {
     if (multiple < 300) {
       setMultiple((multiple) => multiple + 10);
     }
   };
+
   const zoomInPhoto = () => {
     if (multiple > 100) {
       setMultiple((multiple) => multiple - 10);
     }
   };
+
   const handleInit = () => {
     setMaxSize({
       w: 0,
@@ -86,6 +93,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       y: 0,
     });
   };
+
   const dragImgStart = (event: MouseEvent) => {
     event.preventDefault();
     const firstX = event.clientX;
