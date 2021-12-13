@@ -121,10 +121,6 @@ a:hover {
     color: #024dbc;
     text-decoration: underline; }
 
-a:not([href]), a:not([href]):hover {
-  color: inherit;
-  text-decoration: none; }
-
 pre,
 code,
 kbd,
@@ -440,7 +436,6 @@ main {
       margin-left: 10px; }
 
 .zoomPhoto-wrap {
-  margin-top: 100px;
   position: relative;
   color: #212529;
   border: 1px solid #e8e8e870; }
@@ -472,7 +467,8 @@ main {
 
 .zoomPhoto-wrap .templateImg-wrap {
     color: #212529;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 auto; }
 
 .zoomPhoto-wrap .templateImg {
     display: flex;

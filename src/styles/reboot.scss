@@ -118,10 +118,10 @@ h6 {
 // Similarly, the top margin on `<p>`s get reset. However, we also reset the
 // bottom margin to use `rem` units instead of `em`.
 
-p {
-  margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
-}
+// p {
+//   margin-top: 0;
+//   margin-bottom: $paragraph-margin-bottom;
+// }
 
 // Abbreviations
 //
@@ -145,24 +145,24 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul {
-  padding-left: 2rem;
-}
+// ol,
+// ul {
+//   padding-left: 2rem;
+// }
 
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
+// ol,
+// ul,
+// dl {
+//   margin-top: 0;
+//   margin-bottom: 1rem;
+// }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
-}
+// ol ol,
+// ul ul,
+// ol ul,
+// ul ol {
+//   margin-bottom: 0;
+// }
 
 dt {
   font-weight: $dt-font-weight;
@@ -212,15 +212,15 @@ sup {
 
 // Links
 
-a {
-  color: $link-color;
-  text-decoration: $link-decoration;
+// a {
+//   color: $link-color;
+//   text-decoration: $link-decoration;
 
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-  }
-}
+//   &:hover {
+//     color: $link-hover-color;
+//     text-decoration: $link-hover-decoration;
+//   }
+// }
 
 // And undo these styles for placeholder links/named anchors (without href).
 // It would be more straightforward to just use a[href] in previous block, but that
@@ -293,10 +293,10 @@ img {
 // 1. Workaround for the SVG overflow bug in IE 11 is still required.
 //    See https://github.com/twbs/bootstrap/issues/26878
 
-svg {
-  overflow: hidden; // 1
-  vertical-align: middle;
-}
+// svg {
+//   overflow: hidden; // 1
+//   vertical-align: middle;
+// }
 
 // Tables
 
@@ -306,13 +306,13 @@ table {
   border-collapse: collapse;
 }
 
-caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: $text-muted;
-  text-align: left;
-  caption-side: bottom;
-}
+// caption {
+//   padding-top: 0.5rem;
+//   padding-bottom: 0.5rem;
+//   color: $text-muted;
+//   text-align: left;
+//   caption-side: bottom;
+// }
 
 // Matches default `<td>` alignment by inheriting from the `<body>`, or the
 // closest parent with a set `text-align`.
@@ -325,29 +325,29 @@ th {
 
 // 1. Allow labels to use `margin` for spacing.
 
-label {
-  display: inline-block; // 1
-  margin-bottom: 0.5rem;
-}
+// label {
+//   display: inline-block; // 1
+//   margin-bottom: 0.5rem;
+// }
 
 // Remove the default `border-radius` that macOS Chrome adds.
 //
 // Details at https://github.com/twbs/bootstrap/issues/24093
 
-button {
-  // stylelint-disable-next-line property-blacklist
-  border-radius: 0;
-}
+// button {
+//   // stylelint-disable-next-line property-blacklist
+//   border-radius: 0;
+// }
 
 // Work around a Firefox/IE bug where the transparent `button` background
 // results in a loss of the default `button` focus styles.
 //
 // Credit: https://github.com/suitcss/base/
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
+// button:focus {
+//   outline: 1px dotted;
+//   outline: 5px auto -webkit-focus-ring-color;
+// }
 
 // 1. Remove the margin in Firefox and Safari
 
@@ -380,9 +380,9 @@ select {
 //
 // Details at https://github.com/twbs/bootstrap/issues/24990
 
-select {
-  word-wrap: normal;
-}
+// select {
+//   word-wrap: normal;
+// }
 
 // Remove the dropdown arrow in Chrome from inputs built with datalists.
 //
@@ -397,18 +397,18 @@ select {
 // 2. Correct the inability to style clickable types in iOS and Safari.
 // 3. Opinionated: add "hand" cursor to non-disabled button elements.
 
-button,
-[type="button"], // 1
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; // 2
+// button,
+// [type="button"], // 1
+// [type="reset"],
+// [type="submit"] {
+//   -webkit-appearance: button; // 2
 
-  @if $enable-pointer-cursor-for-buttons {
-    &:not(:disabled) {
-      cursor: pointer; // 3
-    }
-  }
-}
+//   @if $enable-pointer-cursor-for-buttons {
+//     &:not(:disabled) {
+//       cursor: pointer; // 3
+//     }
+//   }
+// }
 
 // Remove inner border and padding from Firefox, but don't restore the outline like Normalize.
 
