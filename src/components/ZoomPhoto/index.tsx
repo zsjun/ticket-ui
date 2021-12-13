@@ -190,7 +190,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       </div>
       <div
         style={{
-          width,
+          width: width - 20,
           height,
         }}
         className="templateImg-wrap"

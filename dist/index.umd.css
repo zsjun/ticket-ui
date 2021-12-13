@@ -440,17 +440,16 @@ main {
       margin-left: 10px; }
 
 .zoomPhoto-wrap {
+  margin-top: 100px;
   position: relative;
   color: #212529;
-  background-color: #e8e8e870;
-  border: 1px solid #e8e8e870;
-  padding-top: 40px; }
+  border: 1px solid #e8e8e870; }
 
 .zoomPhoto-wrap .transform-scale {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 80px;
+    top: -30px;
+    right: 0px;
+    width: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center; }
@@ -479,6 +478,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.zoomPhoto-wrap .templateImg img {
+      cursor: pointer; }
 
 .zoomPhoto-wrap .previewImg {
     position: relative; }
