@@ -18,6 +18,7 @@ interface BaseZoomPhotoProps {
   imgurl?: string;
   width?: number;
   height?: number;
+  style?: React.CSSProperties;
   children?: React.ReactNode;
 }
 interface Size {
@@ -50,7 +51,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
   const [imgClass, setImgClass] = useState<string>("");
   const imgRef = useRef<any>();
 
-  const { className, children, ...restProps } = props;
+  const { className = "", children, ...restProps } = props;
   const classes = classNames("zoomPhoto-wrap", className, {
     [`zoomPhoto`]: false,
   });
@@ -198,7 +199,7 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       >
         <div
           className="templateImg"
-          style={{ width, height }}
+          style={{ width: "100%", height }}
           onMouseDown={dragImgStart}
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
@@ -220,8 +221,8 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
   );
 };
 
-ZoomPhoto.defaultProps = {
-  className: "",
-};
+// ZoomPhoto.defaultProps = {
+//   className: "",
+// };
 
 export default memo(ZoomPhoto);
