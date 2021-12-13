@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import classNames from "classnames";
-// import urlImg from "./ss.png";
+import noImg from "./noImg.js";
 import zoomInPng from "./zoom-in.png";
 import zoomOutPng from "./zoom-out.png";
 
@@ -16,6 +16,8 @@ interface BaseZoomPhotoProps {
   className?: string;
   size?: number;
   imgurl?: string;
+  width?: number;
+  height?: number;
   children?: React.ReactNode;
 }
 interface Size {
@@ -72,17 +74,17 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       setMultiple((multiple) => multiple - 10);
     }
   };
-  // const handleInit = () => {
-  //   setMaxSize({
-  //     w: 0,
-  //     h: 0,
-  //   });
-  //   setImgClass("");
-  //   setImgPos({
-  //     x: 0,
-  //     y: 0,
-  //   });
-  // };
+  const handleInit = () => {
+    setMaxSize({
+      w: 0,
+      h: 0,
+    });
+    setImgClass("");
+    setImgPos({
+      x: 0,
+      y: 0,
+    });
+  };
   const dragImgStart = (event: MouseEvent) => {
     event.preventDefault();
     const firstX = event.clientX;
@@ -101,8 +103,8 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       moveY = ev.clientY - firstY;
       newX = x + moveX;
       newY = y + moveY;
-      const maxVisibleWidth = (w + imgEl.offsetWidth * size) / 2 - 40;
-      const maxVisibleHeight = (h + imgEl.offsetHeight * size) / 2 - 40;
+      const maxVisibleWidth = (w + imgEl.offsetWidth * size) / 2;
+      const maxVisibleHeight = (h + imgEl.offsetHeight * size) / 2;
       if (
         Math.abs(newX) < maxVisibleWidth &&
         Math.abs(newY) < maxVisibleHeight
@@ -160,13 +162,13 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
     const imgEl = imgRef.current;
     imgEl.onmousewheel = null;
   };
-  const { size = 0, imgurl } = props;
+  const { width = 200, height = 200, imgurl } = props;
   return (
     <div
       className={classes}
       style={{
-        width: size,
-        height: size + 40,
+        width: width,
+        height: height,
       }}
     >
       <div className="transform-scale">
@@ -188,21 +190,21 @@ export const ZoomPhoto: FC<BaseZoomPhotoProps> = (props) => {
       </div>
       <div
         style={{
-          width: size,
-          height: size,
+          width,
+          height,
         }}
         className="templateImg-wrap"
         {...restProps}
       >
         <div
           className="templateImg"
-          style={{ width: size, height: size }}
+          style={{ width, height }}
           onMouseDown={dragImgStart}
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
         >
           <img
-            src={imgurl}
+            src={imgurl || noImg}
             alt=""
             style={{
               transform: `scale(${multiple * 0.01})`,

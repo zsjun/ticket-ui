@@ -12,6 +12,6 @@ const Template: ComponentStory<typeof ZoomPhoto> = (args) => (
 export const DefatulZoomPhoto = Template.bind({});
 // 传入属性
 DefatulZoomPhoto.args = {
-  size: 200,
-  imgurl: "./box-no-data.png",
+  width: 294,
+  height: 280,
 };
