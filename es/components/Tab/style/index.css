@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+/**
+ * @atom Tab
+ * @section Tab
+ * @modifiers
+ *  .tab 分页标签
+ *  .tab.active 标签激活态
+ *  .tab-activated 标签激活态，和.tab.active一样
+ *  .btn-tab 按钮型分页标签
+ *  .btn-tab.active 按钮型标签激活态
+ *  .btn-tab-activated 按钮型标签激活态
+ * @markup
+ *  <span class="tab">tab1</span>
+ *  <span class="tab active">tab2</span>
+ *  <span class="btn-tab">tab1</span>
+ *  <span class="btn-tab active">tab2</span>
+ */
+.tab {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-right: 10px;
+  color: #999;
+  fill: #999;
+  border-bottom: 2px solid transparent; }
+  .tab:hover {
+    cursor: pointer;
+    color: #2e3e4b;
+    fill: #2e3e4b; }
+  .tab.active {
+    color: #2e3e4b;
+    fill: #2e3e4b;
+    border-bottom: 2px solid #2e3e4b; }
+
+.tab-wrap {
+  width: 100%; }
+
+.tab-header {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  font-weight: bold;
+  color: #999;
+  fill: #999; }
+
+.tab-header-item {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-bottom: 2px solid transparent; }
+  .tab-header-item.mgr30 {
+    margin-right: 30px; }
+  .tab-header-item:last-child {
+    margin-right: 0; }
+  .tab-header-item:hover {
+    color: #2e3e4b;
+    fill: #2e3e4b; }
+  .tab-header-item.active {
+    color: #2e3e4b;
+    fill: #2e3e4b;
+    border-bottom: 2px solid #2e3e4b; }
+  .tab-header-item.disabled {
+    cursor: not-allowed;
+    opacity: 0.6; }
+    .tab-header-item.disabled:hover {
+      color: #999;
+      fill: #999; }
+
+.tab-card > .tab-header > .tab-header-item {
+  background-color: #f7f7f7;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  height: 36px;
+  margin-right: 0;
+  line-height: 14px;
+  padding: 10px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-left: 1px solid #e0e2ef;
+  border-top: 1px solid #e0e2ef;
+  border-bottom: 1px solid #e0e2ef; }
+  .tab-card > .tab-header > .tab-header-item:last-child {
+    border-right: 1px solid #e0e2ef; }
+  .tab-card > .tab-header > .tab-header-item:hover {
+    cursor: pointer; }
+  .tab-card > .tab-header > .tab-header-item.active {
+    background-color: #fff;
+    font-weight: 700;
+    color: #333333;
+    border-bottom: none; }
+  .tab-card > .tab-header > .tab-header-item.disabled {
+    cursor: not-allowed;
+    opacity: 0.6; }
+    .tab-card > .tab-header > .tab-header-item.disabled:hover {
+      color: #999;
+      fill: #999; }
+
+.tab-panel {
+  display: none; }
+  .tab-panel.active {
+    display: block; }

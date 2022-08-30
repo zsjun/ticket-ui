@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.checkbox-label {
+  user-select: none;
+  cursor: pointer; }
+  .checkbox-label.disabled {
+    color: #999;
+    cursor: not-allowed; }
+
+.checkbox {
+  margin-right: 5px;
+  margin-left: 1px;
+  vertical-align: 1px; }

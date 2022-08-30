@@ -1,0 +1,95 @@
+.quick-filter-comp-overlay {
+    min-width: 188px !important;
+    width: 188px !important;
+    border-top: none;
+
+	.time-group {
+		padding: 15px;
+		font-size: 12px;
+		.radio-label {
+			display: block;
+			margin-bottom: 7px;
+		}
+	}
+
+	.time-group-title {
+		font-weight: bold;
+		color: #333;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.filter-diag-oper {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 18px 19px 18px;
+	}
+}
+
+.quick-filter-comp {
+	.dropdown {
+		width: unset;
+	}
+	.dropdown-filter {
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		color: #333;
+		font-size: 14px;
+		line-height: 1;
+		padding: 0 10px;
+		margin-right: 20px;
+		height: 33px;
+		display: inline-flex;
+		align-items: center;
+
+		&:hover {
+			text-decoration: none;
+			border-color: #3A7EEA;
+			color: unset;
+		}
+	   .icon-filter {
+			position: relative;
+			vertical-align: middle;
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+.quick-filter-comp-group {
+    border-top: 1px solid #e0e0e0;
+    padding: 15px 17px 8px 17px;
+    font-size: 12px;
+    width: 188px;
+
+	.checkbox-label {
+		display: block;
+		margin-bottom: 7px;
+	}
+	.double-column {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+		.checkbox-label {
+			flex-basis: 70px;
+		}
+	}
+	.group-title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.title {
+		font-weight: bold;
+	}
+
+	.clear {
+		color: #666;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+
+	.all {
+		color: #333;
+		cursor: pointer;
+	}
+}

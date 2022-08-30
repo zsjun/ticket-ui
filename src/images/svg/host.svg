@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>终端</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="导航模块02备份-2" transform="translate(-20.000000, -378.000000)"  fill-rule="nonzero">
+            <g id="Group-Copy-4" transform="translate(0.000000, -1.000000)">
+                <g id="Group-38">
+                    <g id="Group-29" transform="translate(0.000000, 0.991836)">
+                        <g id="编组备份" transform="translate(10.000000, 271.008164)">
+                            <g id="终端" transform="translate(10.000000, 107.000000)">
+                                <path d="M11.34,0 L0.66,0 C0.297738738,0.00536771284 0.00536771284,0.297738738 0,0.66 L0,8.34 C0.00536771284,8.70226126 0.297738738,8.99463229 0.66,9 L4,9 L4,11 L2,11 L2,12 L10,12 L10,11 L8,11 L8,9 L11.34,9 C11.7022613,8.99463229 11.9946323,8.70226126 12,8.34 L12,0.66 C11.9946323,0.297738738 11.7022613,0.00536771284 11.34,0 Z M11,7.47 C11,7.76271092 10.7627109,8 10.47,8 L1.53,8 C1.23728908,8 1,7.76271092 1,7.47 L1,1.53 C1,1.23728908 1.23728908,1 1.53,1 L10.47,1 C10.7627109,1 11,1.23728908 11,1.53 L11,7.47 Z" id="形状"></path>
+                                <path d="M13,0 L13,12 L18,12 L18,0 L13,0 Z M17,2 L14,2 L14,1 L17,1 L17,2 Z" id="形状"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

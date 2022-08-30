@@ -1,0 +1,144 @@
+/**
+ * @atom Button
+ * @section Button
+ * @modifiers
+ *  .btn-primary  主按钮
+ *  .btn-secondary 次按钮
+ *  .btn-cancel 取消按钮
+ *  .btn-link 按钮链接
+ * @markup
+ *  <button class="btn">button</button>
+ *  <button class="btn btn-primary">button primary</button>
+ *  <button class="btn btn-secondary">button secondary</button>
+ *  <button class="btn btn-cancel">button cancel</button>
+ *  <button class="btn btn-link">button link</button>
+ */
+@import "../../../styles/assets/constant.scss";
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-size: $font-basic-size;
+  font-weight: normal;
+  height: 32px;
+  line-height: 32px;
+
+  color: #333;
+  background-color: #ebebeb;
+  border: none;
+
+  &:hover {
+    // background-color: $basic-aid-gray-color;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  &.mini {
+    padding: 5px 13px;
+    font-weight: normal;
+    height: 27px;
+    font-size: $font-size-12;
+  }
+}
+
+.btn-default {
+  &.mini {
+    padding: 5px 13px;
+    font-weight: normal;
+    height: 27px;
+    font-size: $font-size-12;
+	line-height: unset;
+  }
+}
+
+.btn-primary {
+  background-color: $primaryBlueColor;
+  color: #fff;
+  &.mini {
+    padding: 5px 13px;
+    font-weight: normal;
+    height: 27px;
+    font-size: $font-size-12;
+  }
+  &:not(:disabled):hover {
+    color: #fff;
+    background-color: $primaryBlueHoverColor;
+  }
+}
+
+.btn-secondary {
+  background-color: #e5efff;
+  color: #345ea1;
+  &.mini {
+    padding: 5px 13px;
+    font-weight: normal;
+    height: 27px;
+    font-size: $font-size-12;
+  }
+  &:not(:disabled):hover {
+    background-color: #d5e3f9;
+  }
+}
+.btn-return {
+  background-color: #3a7eea;
+  color: #fff;
+  border-radius: 2px;
+  &.mini {
+    padding: 4px 6px 4px 1px;
+    font-weight: normal;
+    height: unset;
+    font-size: $font-size-12;
+  }
+  &:not(:disabled):hover {
+    background-color: #345EA1;
+  }
+}
+
+// .btn-cancel {
+//   background-color: $basic-border-color;
+//   color: #999;
+
+//   &:hover {
+//     background-color: $basic-border-color;
+//   }
+// }
+
+.btn-reset {
+  background-color: #e5efff;
+  color: $primaryBlueColor;
+  &.mini {
+    padding: 5px 13px;
+    font-weight: normal;
+    height: 27px;
+    font-size: $font-size-12;
+  }
+  &:hover,
+  &:active {
+    background-color: #d5e3f9;
+    color: $primaryBlueColor;
+    text-decoration: none;
+  }
+}
+
+.btn-link {
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  font-weight: normal;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.btn-danger {
+  background-color: $subRedColor;
+  color: #fff;
+}

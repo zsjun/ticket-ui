@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>基本信息</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="导航图标" transform="translate(-67.000000, -714.000000)">
+            <g id="Group-38" transform="translate(0.000000, -1.000000)">
+                <g id="Group-29" transform="translate(0.000000, 0.991836)">
+                    <g id="编组" transform="translate(66.000000, 46.008164)">
+                        <g id="基本信息" transform="translate(1.000000, 668.000000)">
+                            <path d="M0,13.1724 L16.033,13.1724 L16.033,0.0004 L0,0.0004 L0,13.1724 Z M1.5,11.6724 L14.533,11.6724 L14.533,1.5004 L1.5,1.5004 L1.5,11.6724 Z" id="Fill-1"></path>
+                            <polygon id="Fill-2" points="3 7 7 7 7 3 3 3"></polygon>
+                            <polygon id="Fill-3" points="9 4 13 4 13 3 9 3"></polygon>
+                            <polygon id="Fill-4" points="9 7 13 7 13 6 9 6"></polygon>
+                            <polygon id="Fill-5" points="3 10 13 10 13 9 3 9"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

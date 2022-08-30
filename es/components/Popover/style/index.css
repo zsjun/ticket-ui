@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.popover {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  visibility: visible;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 1px;
+  opacity: 1; }
+  .popover-hidden {
+    display: none; }
+
+.popover-inner {
+  padding: 20px 20px;
+  color: #2e3e4b;
+  text-align: left;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 3px;
+  min-height: 34px;
+  border: 0 solid transparent;
+  box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(16, 22, 26, 0.2); }
+
+.popover-arrow,
+.popover-arrow-inner {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.popover-placement-top, .popover-placement-topLeft, .popover-placement-topRight {
+  padding-bottom: 6px; }
+
+.popover-placement-right, .popover-placement-rightTop, .popover-placement-rightBottom {
+  padding-left: 6px; }
+
+.popover-placement-bottom, .popover-placement-bottomLeft, .popover-placement-bottomRight {
+  padding-top: 6px; }
+
+.popover-placement-left, .popover-placement-leftTop, .popover-placement-leftBottom {
+  padding-right: 6px; }
+
+.popover-placement-top .popover-arrow,
+.popover-placement-topLeft .popover-arrow,
+.popover-placement-topRight .popover-arrow {
+  bottom: -1px;
+  margin-left: -8px;
+  border-width: 8px 8px 0;
+  border-top-color: #999; }
+
+.popover-placement-top .popover-arrow-inner,
+.popover-placement-topLeft .popover-arrow-inner,
+.popover-placement-topRight .popover-arrow-inner {
+  bottom: 0;
+  margin-left: -8px;
+  border-width: 8px 8px 0;
+  border-top-color: #ffffff; }
+
+.popover-placement-top .popover-arrow {
+  left: 50%; }
+
+.popover-placement-topLeft .popover-arrow {
+  left: 15%; }
+
+.popover-placement-topRight .popover-arrow {
+  right: 15%; }
+
+.popover-placement-right .popover-arrow,
+.popover-placement-rightTop .popover-arrow,
+.popover-placement-rightBottom .popover-arrow {
+  left: -1px;
+  margin-top: -8px;
+  border-width: 8px 8px 8px 0;
+  border-right-color: #999; }
+
+.popover-placement-right .popover-arrow-inner,
+.popover-placement-rightTop .popover-arrow-inner,
+.popover-placement-rightBottom .popover-arrow-inner {
+  left: 0;
+  margin-top: -8px;
+  border-width: 8px 8px 8px 0;
+  border-right-color: #ffffff; }
+
+.popover-placement-right .popover-arrow {
+  top: 50%; }
+
+.popover-placement-rightTop .popover-arrow {
+  top: 15%;
+  margin-top: 0; }
+
+.popover-placement-rightBottom .popover-arrow {
+  bottom: 15%; }
+
+.popover-placement-left .popover-arrow,
+.popover-placement-leftTop .popover-arrow,
+.popover-placement-leftBottom .popover-arrow {
+  right: -1px;
+  margin-top: -8px;
+  border-width: 8px 0 8px 8px;
+  border-left-color: #999; }
+
+.popover-placement-left .popover-arrow-inner,
+.popover-placement-leftTop .popover-arrow-inner,
+.popover-placement-leftBottom .popover-arrow-inner {
+  right: 0;
+  margin-top: -8px;
+  border-width: 8px 0 8px 8px;
+  border-left-color: #ffffff; }
+
+.popover-placement-left .popover-arrow {
+  top: 50%; }
+
+.popover-placement-leftTop .popover-arrow {
+  top: 15%;
+  margin-top: 0; }
+
+.popover-placement-leftBottom .popover-arrow {
+  bottom: 15%; }
+
+.popover-placement-bottom .popover-arrow,
+.popover-placement-bottomLeft .popover-arrow,
+.popover-placement-bottomRight .popover-arrow {
+  top: -1px;
+  margin-left: -8px;
+  border-width: 0 8px 8px;
+  border-bottom-color: #999; }
+
+.popover-placement-bottom .popover-arrow-inner,
+.popover-placement-bottomLeft .popover-arrow-inner,
+.popover-placement-bottomRight .popover-arrow-inner {
+  top: 0;
+  margin-left: -8px;
+  border-width: 0 8px 8px;
+  border-bottom-color: #ffffff; }
+
+.popover-placement-bottom .popover-arrow {
+  left: 50%; }
+
+.popover-placement-bottomLeft .popover-arrow {
+  left: 15%; }
+
+.popover-placement-bottomRight .popover-arrow {
+  right: 15%; }

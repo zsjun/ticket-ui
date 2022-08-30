@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>配置</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="导航模块02" transform="translate(-593.000000, -290.000000)" fill-rule="nonzero">
+            <g id="配置" transform="translate(593.000000, 290.000000)">
+                <polygon id="路径" points="6 1.08 6 0 2 0 2 1.08 0 1.08 0 2.44 2 2.44 2 4 6 4 6 2.44 16 2.44 16 1.08"></polygon>
+                <polygon id="路径" points="14 4.95 10 4.95 10 6.27 0 6.27 0 7.62 10 7.62 10 8.95 14 8.95 14 7.62 16 7.62 16 6.27 14 6.27"></polygon>
+                <polygon id="路径" points="9 10 5 10 5 11.32 0 11.32 0 12.67 5 12.67 5 14 9 14 9 12.67 16 12.67 16 11.32 9 11.32"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

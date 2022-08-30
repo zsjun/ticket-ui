@@ -1,0 +1,6 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+  <defs></defs>
+  <title>明文敏感信息</title>
+  <path d="M13,1H2V14H13ZM9,11H4V10H9Zm2-3H4V7h7Zm0-3H4V4h7Z" transform="translate(-2 -1)" />
+  <polygon points="12 2 12 14 2 14 2 16 14 16 14 15 14 14 14 2 12 2" />
+</svg>

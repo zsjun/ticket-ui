@@ -1,0 +1,228 @@
+/**
+ * @atom Loading
+ * @section Loading
+ * @modifiers
+ *  .loading-sm 小loading,按钮中使用
+ *  .loading-lg 大loading,组件加载使用
+ *  .loading-bar 条形Loading，模块加载使用
+ *  .loading-logo TIP logo loading
+ *  .bar loading里的小矩形
+ * @markup
+ *  <div class="loading-lg">
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *  </div>
+ *  <div class="loading-sm">
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *    <div class="bar"></div>
+ *  </div>
+ *  <div class="loading-logo">TIP</div>
+ *  <br />
+ *  <br />
+ *  <div class="loading-bar">
+ *    <div class="loading-bar-background"></div>
+ *    <div class="loading-bar-foreground"></div>
+ *  </div>
+ */
+
+@import "../../../styles/assets/constant.scss";
+
+$blue: $basic-aid-color;
+$blue-light: $basic-aid-blue-color;
+
+.loading {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+}
+.loading-wrapper {
+  margin: 10px auto;
+  font-size: 0;
+}
+.loading-wrapper-vertical {
+  text-align: center;
+  width: 100px;
+}
+.loading-wrapper-vertical .loading-txt {
+  margin-top: 8px;
+}
+.loading-wrapper-horizontal {
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+}
+.loading-wrapper-horizontal .loading-txt {
+  margin-left: 8px;
+}
+.loading-lg {
+  @extend .loading;
+  font-size: 48px;
+  // .bar-1, .bar-2, .bar-3, .bar-4, .bar-5, .bar-6, .bar-7, .bar-8, .bar-9, .bar-10, .bar-11, .bar-12 {
+  // animation-name: spin_lg;
+  // }
+}
+.loading-txt {
+  margin: 0 auto;
+  font-size: 12px;
+  color: #3a7eea;
+}
+.loading-md {
+  @extend .loading;
+  font-size: 28px;
+}
+.loading-sm {
+  @extend .loading;
+  font-size: 16px;
+  // .bar-1, .bar-2, .bar-3, .bar-4, .bar-5, .bar-6, .bar-7, .bar-8, .bar-9, .bar-10, .bar-11, .bar-12 {
+  // animation-name: spin_sm;
+  // }
+}
+
+.loading-bar {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .loading-bar-background {
+    position: absolute;
+    background-color: #c9e2ff;
+    width: 100%;
+    height: 100%;
+  }
+  .loading-bar-foreground {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: $basic-aid-color;
+    width: 20%;
+    height: 100%;
+    animation: loading-bar 1s ease-in-out 0s infinite;
+  }
+}
+
+.loading-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 70px;
+  color: $primaryBlueColor;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 2px;
+
+  .loading-box-icon {
+    margin-right: 8px;
+    transform-origin: center left;
+  }
+}
+.loading-circle {
+  text-align: left;
+  margin: 0 auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.1em #e2e3e3;
+}
+
+.loading-circle i {
+  position: absolute;
+  clip: rect(0, 1em, 1em, 0.5em);
+  width: 1em;
+  height: 1em;
+  animation: spinner-circle-clipper 1s ease-in-out infinite;
+}
+
+@keyframes spinner-circle-clipper {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.loading-circle i::after {
+  position: absolute;
+  clip: rect(0, 1em, 1em, 0.5em);
+  width: 1em;
+  height: 1em;
+  content: "";
+  animation: spinner-circle 1s ease-in-out infinite;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.1em #3a7eea;
+}
+
+@keyframes spinner-circle {
+  0% {
+    transform: rotate(-170deg);
+  }
+
+  100% {
+    transform: rotate(170deg);
+  }
+}
+
+@keyframes spin_lg {
+  0% {
+    background-color: $blue-light;
+  }
+  5% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: $blue-light;
+  }
+}
+@keyframes spin_sm {
+  // 0% {
+  //     background-color: $basic-aid-gray-color;
+  // }
+  // 5% {
+  //     background-color: $basic-imp-color;
+  // }
+  // 100% {
+  //     background-color: $basic-aid-gray-color;
+  // }
+  0% {
+    background-color: $blue-light;
+  }
+  5% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: $blue-light;
+  }
+}
+
+@keyframes loading-bar {
+  from {
+    right: 100%;
+  }
+  to {
+    right: -20%;
+  }
+}

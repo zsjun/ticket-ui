@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0001 0 14.55 0 14.55 14.55 0.0001 14.55"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="导航模块02" transform="translate(-290.000000, -495.000000)">
+            <g id="Group-Copy-4">
+                <g id="Group-38">
+                    <g id="Group-29" transform="translate(0.000000, 0.991836)">
+                        <g id="编组" transform="translate(0.000000, 116.008164)">
+                            <g transform="translate(290.000000, 378.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M9.3401,3.77 L7.0801,3.77 L7.0801,6.96 L9.3401,6.96 C10.2201,6.96 10.9401,6.25 10.9401,5.37 C10.9401,4.49 10.2201,3.77 9.3401,3.77 L9.3401,3.77 Z M9.3401,8.69 L7.0801,8.69 L7.0801,12.5 L5.3501,12.5 L5.3501,2.05 L9.3401,2.05 C11.1801,2.05 12.6701,3.54 12.6701,5.37 C12.6701,7.2 11.1801,8.69 9.3401,8.69 L9.3401,8.69 Z M1.8901,12.5 L3.6201,12.5 L3.6201,2.05 L1.8901,2.05 L1.8901,12.5 Z M0.0001,14.55 L14.5501,14.55 L14.5501,0 L0.0001,0 L0.0001,14.55 Z" id="Fill-1" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+/**
+ * @atom Label
+ * @section Label
+ * @modifiers
+ *  error
+ *  warning
+ *  alarm
+ *  info
+ *  dark
+ */
+.label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 4px;
+  height: 18px;
+  line-height: 16px;
+  color: #fff;
+  fill: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer; }
+  .label.closable:after {
+    display: inline-block;
+    content: "×";
+    margin-left: 5px;
+    vertical-align: top;
+    margin-top: -1px; }
+  .label.max-width {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+.label-cavity {
+  color: #2b75c8;
+  fill: #2b75c8;
+  border-color: #2b75c8;
+  background-color: transparent; }
+
+.label-danger {
+  background-color: #d73e3e; }
+
+.label-warning {
+  background-color: #ff9e36; }
+  .label-warning .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff; }
+  .label-warning.light {
+    background-color: transparent;
+    color: #ff9e36;
+    border: 1px solid #ff9e36; }
+    .label-warning.light .icon {
+      fill: #ff9e36; }
+
+.label-info {
+  background-color: #2d84e5; }
+  .label-info .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff; }
+  .label-info.light {
+    background-color: transparent;
+    color: #2d84e5;
+    border: 1px solid #2d84e5; }
+    .label-info.light .icon {
+      fill: #2d84e5; }
+
+.label-error {
+  background-color: #d73e3e; }
+  .label-error .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff; }
+  .label-error.light {
+    background-color: transparent;
+    color: #d73e3e;
+    border: 1px solid #d73e3e; }
+    .label-error.light .icon {
+      fill: #d73e3e; }
+
+.label-alarm {
+  background-color: #ffc688; }
+  .label-alarm .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff; }
+  .label-alarm.light {
+    background-color: transparent;
+    color: #ffc688;
+    border: 1px solid #ffc688; }
+    .label-alarm.light .icon {
+      fill: #ffc688; }
+
+.label-dark {
+  background-color: #3c4a5b; }
+  .label-dark .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff; }
+  .label-dark.light {
+    background-color: transparent;
+    color: #3c4a5b;
+    border: 1px solid #3c4a5b; }
+    .label-dark.light .icon {
+      fill: #3c4a5b; }

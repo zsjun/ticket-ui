@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 主色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 辅助色
+ */
+/**
+ * @color
+ * @section 边框色
+ */
+.input {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #e0e2e1;
+  height: 30px;
+  line-height: 28px;
+  background-color: #f8f8fa;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none; }
+  .input:hover {
+    border: 1px solid #e0e2e1; }
+  .input:focus {
+    border-color: #2d84e5;
+    box-shadow: 0 0 3px #2d84e5; }
+  .input::-webkit-input-placeholder {
+    color: #999; }
+  .input:-ms-input-placeholder {
+    color: #999; }
+  .input::-moz-placeholder {
+    color: #999;
+    opacity: 1; }
+  .input:-moz-placeholder {
+    color: #999;
+    opacity: 1; }
+  .input.textarea {
+    padding-top: 10px;
+    min-height: 60px;
+    resize: none;
+    overflow: auto;
+    line-height: 20px; }
+    .input.textarea.error {
+      border-color: #d73e3e;
+      box-shadow: 0 0 5px #d73e3e; }
+  .input:disabled {
+    color: #999;
+    cursor: not-allowed; }
+  .input.textarea-wrap {
+    position: relative;
+    padding-bottom: 25px;
+    padding-right: 0; }
+    .input.textarea-wrap.focus {
+      border-color: #2d84e5;
+      box-shadow: 0 0 3px #2d84e5; }
+    .input.textarea-wrap.error {
+      outline: 0;
+      border-color: #d73e3e;
+      box-shadow: 0 0 5px #d73e3e; }
+    .input.textarea-wrap.is-disabled {
+      color: #999;
+      cursor: not-allowed; }
+    .input.textarea-wrap .max {
+      font-size: 12px;
+      line-height: 1;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      color: #333333; }
+      .input.textarea-wrap .max i {
+        font-style: normal;
+        color: #2b75c8;
+        font-weight: bold; }
+    .input.textarea-wrap .textarea-content {
+      height: 100%;
+      width: 100%;
+      overflow: auto; }
+      .input.textarea-wrap .textarea-content:focus {
+        outline: none; }
+      .input.textarea-wrap .textarea-content:empty:before {
+        content: attr(placeholder);
+        white-space: pre-line;
+        color: #999; }
+      .input.textarea-wrap .textarea-content:not(:empty):before {
+        content: ""; }
+  .input.error {
+    outline: 0;
+    border-color: #d73e3e;
+    box-shadow: 0 0 5px #d73e3e; }
+
+.input-wrapper {
+  position: relative; }
+  .input-wrapper .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    fill: #333333; }

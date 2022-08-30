@@ -1,0 +1,10 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.5 15.75">
+  <defs></defs>
+  <title>终端取证</title>
+  <path d="M16.75,13.75V1.25H1.25v12.5H6.5V15H4v2H14V15H11.5V13.75Zm-14-11h12.5v9.5H2.75Z" transform="translate(-1.25 -1.25)" />
+  <polygon points="2 4.81 3.5 4.81 3.5 3.5 4.84 3.5 4.84 2 2 2 2 4.81" />
+  <polygon points="12 9 10.81 9 10.81 10.5 13.5 10.5 13.5 7.69 12 7.69 12 9" />
+  <polygon points="10.81 3.5 12 3.5 12 4.81 13.5 4.81 13.5 2 10.81 2 10.81 3.5" />
+  <polygon points="3.5 7.69 2 7.69 2 10.5 4.84 10.5 4.84 9 3.5 9 3.5 7.69" />
+  <circle cx="7.75" cy="6.25" r="1.44" />
+</svg>
