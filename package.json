@@ -1,16 +1,16 @@
 {
-  "name": "stonewise-ui",
+  "name": "ticket-ui",
   "version": "0.1.4",
   "private": false,
   "author": "zsj",
-  "description": "react stonewise ui",
+  "description": "react ticket ui",
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
   "keywords": [
     "Component",
     "UI",
     "React",
-    "stonewise-ui"
+    "ticket-ui"
   ],
   "homepage": "",
   "repository": {},
